@@ -1,9 +1,19 @@
 @import "tailwindcss";
 
-/* Optional global resets */
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+/* 🎨 Custom color palette */
+@theme {
+  --color-brand-base: #ecdfcc;
+  --color-brand-primary: #181c14;
+  --color-brand-secondary: #3c3d37;
+  --color-brand-accent: #697565;
+}
+.font-sans {
+  font-family: var(--font-montserrat), sans-serif;
+}
+
+.font-mono {
+  font-family: var(--font-roboto-mono), monospace;
+}
+html {
+  scroll-behavior: smooth;
 }
